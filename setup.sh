@@ -283,8 +283,9 @@ function install_extra_tools() {
 
 # Run the installation
 banner
-#install_tools
-#setup_xfce_settings
-#setup_gdbplugs
-#install_extra_tools
+install_tools
+setup_xfce_settings
+install_extra_tools
+setup_gdbplugs
+
 

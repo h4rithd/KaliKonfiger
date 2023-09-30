@@ -175,7 +175,7 @@ function install_extra_tools() {
 
     sudo chown -R $USER:$USER /opt/
     sudo rm -rf /tmp/*
-    sudo rm -rf /opt/{adPEAS,AndroidRats,AutoRecon,AWSCloud,C2-Suite,deepce,droopescan,DS-Store,egressbuster,enum4linux-ng,GitTools,Gopherus,Invoke-Obfuscation,jdwp-shellifier,Jenkins,JNDI-Exploit-Kit,jwt_tool,LateralMovement,ligolo-ng,LinEnum,linux-exploit-suggester-2,linux-smart-enumeration,linWinPwn,microsoft,PowerShell-Suite,PowerSploit,rdkit,reverse-ssh,SharpShooter,SprayingToolkit,tplmap,username-anarchy,weevely3,WhatWaf,windapsearch,windows-kernel-exploits,ysoserial}
+    sudo rm -rf /opt/{adPEAS,AndroidRats,AutoRecon,AWSCloud,C2-Suite,deepce,droopescan,DS-Store,egressbuster,enum4linux-ng,GitTools,Gopherus,Invoke-Obfuscation,jdwp-shellifier,Jenkins,JNDI-Exploit-Kit,jwt_tool,LateralMovement,ligolo-ng,LinEnum,linux-exploit-suggester-2,linux-smart-enumeration,linWinPwn,microsoft,PowerShell-Suite,PowerSploit,rdkit,reverse-ssh,SharpShooter,SprayingToolkit,tplmap,username-anarchy,weevely3,WhatWaf,windapsearch,windows-kernel-exploits,ysoserial,KaliKonfiger}
     mkdir -p $HOME/.local/bin/
     mkdir -p /opt/{AndroidRats,AWSCloud,DS-Store,Jenkins,ysoserial,C2-Suite/{C2,Evasion/AtomPePacker},LateralMovement/{Linux/{Binarys,traitor,lxd},Windows/Binarys}}
 

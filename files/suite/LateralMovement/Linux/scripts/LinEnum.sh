@@ -1,0 +1,1 @@
+/opt/LinEnum/LinEnum.sh

@@ -1,0 +1,1 @@
+/opt/PowerSploit/Privesc/PowerUp.ps1

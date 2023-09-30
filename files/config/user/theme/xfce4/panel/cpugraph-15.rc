@@ -1,0 +1,14 @@
+TimeScale=0
+Size=46
+Frame=0
+Border=1
+Bars=0
+PerCore=0
+TrackedCore=0
+InTerminal=1
+StartupNotification=0
+ColorMode=0
+LoadThreshold=1
+Foreground1=rgb(38,162,105)
+BarsColor=rgb(46,194,126)
+

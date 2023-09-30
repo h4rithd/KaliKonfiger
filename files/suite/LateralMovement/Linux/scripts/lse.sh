@@ -1,0 +1,1 @@
+/opt/linux-smart-enumeration/lse.sh

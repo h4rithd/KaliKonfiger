@@ -1,0 +1,1 @@
+/opt/PowerSploit/Recon/Invoke-Portscan.ps1

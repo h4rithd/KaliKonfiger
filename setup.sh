@@ -247,6 +247,7 @@ function install_extra_tools() {
     clone_repo "https://github.com/Ekultek/WhatWaf" "/opt/WhatWaf"
     clone_repo "https://github.com/ropnop/windapsearch" "/opt/windapsearch"
     clone_repo "https://github.com/SecWiki/windows-kernel-exploits" "/opt/windows-kernel-exploits"
+    clone_repo "https://github.com/h4rithd/KaliKonfiger" "/opt/KaliKonfiger"
 
     # Install kerbrute
     install_tool "kerbrute" "$(curl -s https://api.github.com/repos/ropnop/kerbrute/releases/latest | jq -r ".assets[] | select(.name | endswith(\"linux_$(dpkg --print-architecture)\")).browser_download_url")" "$HOME/.local/bin/kerbrute"

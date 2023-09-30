@@ -247,14 +247,13 @@ function install_extra_tools() {
     clone_repo "https://github.com/Ekultek/WhatWaf" "/opt/WhatWaf"
     clone_repo "https://github.com/ropnop/windapsearch" "/opt/windapsearch"
     clone_repo "https://github.com/SecWiki/windows-kernel-exploits" "/opt/windows-kernel-exploits"
-    clone_repo "https://github.com/h4rithd/KaliKonfiger" "/opt/KaliKonfiger"
+    clone_repo "https://github.com/h4rithd/KaliKonfiger.git" "/opt/KaliKonfiger"
 
     # Install kerbrute
-    install_tool "kerbrute" "$(curl -s https://api.github.com/repos/ropnop/kerbrute/releases/latest | jq -r ".assets[] | select(.name | endswith(\"linux_$(dpkg --print-architecture)\")).browser_download_url")" "$HOME/.local/bin/kerbrute"
+    curl -sL "$(curl -s https://api.github.com/repos/ropnop/kerbrute/releases/latest | jq -r ".assets[] | select(.name | endswith(\"linux_$(dpkg --print-architecture)\")).browser_download_url")" -o "$HOME/.local/bin/kerbrute"
 
     # Install kubeletctl
-    install_tool "kubeletctl" "$(curl -s https://api.github.com/repos/cyberark/kubeletctl/releases/latest | jq -r ".assets[] | select(.name | endswith(\"linux_$(dpkg --print-architecture)\")).browser_download_url")" "$HOME/.local/bin/kubeletctl"
-
+    curl -sL "$(curl -s https://api.github.com/repos/cyberark/kubeletctl/releases/latest | jq -r ".assets[] | select(.name | endswith(\"linux_$(dpkg --print-architecture)\")).browser_download_url")" -o "$HOME/.local/bin/kubeletctl"
 
     # Install AtomPePacker
     curl -sL "$(curl -s https://api.github.com/repos/NUL0x4C/AtomPePacker/releases/latest | jq -r '.assets[] | select(.name | endswith("Release.zip")).browser_download_url')" -o "/opt/C2-Suite/Evasion/AtomPePacker/Release.zip"

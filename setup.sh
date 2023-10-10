@@ -54,6 +54,7 @@ install_tools() {
         jq
         golang
         bloodhound
+        xclip
     )
 
     total_tools="${#tools_to_install[@]}"
